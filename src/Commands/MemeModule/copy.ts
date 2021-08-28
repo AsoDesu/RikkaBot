@@ -4,7 +4,7 @@ import CommandManager from "../CommandManager";
 
 class Copy extends BaseCommand {
 	async execute(msg: Message, args: string[]) {
-		if (msg.member.id != "580425653325791272") return;
+		if (msg.author.id != "580425653325791272") return;
 
         msg.channel.send(args.join(' '));
 	}
